@@ -1,4 +1,4 @@
-pycryptodome
+simple-crypt
 qrcode
 pypng
 pillow

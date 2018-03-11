@@ -9,7 +9,7 @@ Use this package to encrypt messages and embed in QR code, and decode the messag
 ## Dependencies
 
 	$[sudo] pip install qrcode
-	$[sudo] pip install pycryptodome
+	$[sudo] pip install simple-crypt
 	$[sudo] pip install pypng
 	$[sudo] pip install zbar
 	$[sudo] pip install pillow

@@ -35,6 +35,7 @@ def make_qr_and_save(data, filename, size=2):
 	print('\n')
 	print('Embedded data in qr: \n')
 	print(data)
+	print('\n')
 	img = qr.make_image()
 
 	filename = filename.replace('/', '_')
@@ -48,7 +49,7 @@ def make_qr_and_save(data, filename, size=2):
 	if(os.path.exists(output_directory)):
 		img.save(output_directory+filename)
 		resized = Image.open(output_directory+filename)
-		resized = resized.resize((560,560),Image.ANTIALIAS)
+		resized = resized.resize((460,460),Image.ANTIALIAS)
 		os.remove(output_directory+filename)
 		resized.save(output_directory+filename,quality=100)
 	else:
@@ -82,6 +83,6 @@ def make_qr_and_save_with_filename(data, size=2, directory_name='bin', filename=
 		img.save(output_directory+filename)
 
 def main():
-	make_qr_and_save('I will write bullshit here!', 'my-file', 3)
+	make_qr_and_save('I will write bullshit here!', 'first2', 3)
 
 if __name__=='__main__': main()
