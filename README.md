@@ -66,7 +66,6 @@ For example::
 
 	$python decrypt_qr.py hello 'My Secret'
 
-
-# **Work in progress
-
-The decryption part is still being worked on and is not ready yet.
+	Output::
+	
+	'my hobby is everything'

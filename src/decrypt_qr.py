@@ -4,6 +4,7 @@ import zbarlight
 import os
 from simplecrypt import decrypt as de
 import sys
+from binascii import unhexlify
 
 def decrypt(file_name, password):
 
@@ -15,7 +16,7 @@ def decrypt(file_name, password):
 	codes = zbarlight.scan_codes('qrcode', image)
 
 	decoded_result=codes[0].decode('utf-8')
-	ciphertext = decoded_result[1:-1]
+	ciphertext = unhexlify(decoded_result)
 	print('Decoded::')
 	print(ciphertext)
 	return de(password, ciphertext)
@@ -27,7 +28,8 @@ def command_line_exec():
 		sys.exit(1)
 	filename_arg = sys.argv[1]
 	password_arg = sys.argv[2]
-	decrypt(filename_arg, password_arg)
+	message = decrypt(filename_arg, password_arg)
+	print(message.decode('utf-8'))
 
 
 def main():
