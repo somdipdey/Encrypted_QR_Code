@@ -1,6 +1,7 @@
 language: python
 # Operating systems
 os:
+  - linux
   - osx
 python:
   - "3.6-dev"  # 3.6 development branch
