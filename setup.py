@@ -16,6 +16,6 @@ setup(
     url='https://github.com/somdipdey/Encrypted_QR_Code',
     description='Use this package to encrypt messages and embed in QR code, and decode the message back.',
     license='MIT',
-    install_requires=['pycryptodome','qrcode','pypng','zbar','pillow'],
+    install_requires=['pycryptodome','qrcode','pypng','pillow'],
     packages=['src']
 )

@@ -1,5 +1,4 @@
 pycryptodome
 qrcode
 pypng
-zbar
 pillow
