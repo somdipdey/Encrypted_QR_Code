@@ -31,6 +31,13 @@ The aformentioned steps would install zbarlight. For more information consult th
 	$cd Encrypted_QR_Code
 	$[sudo] python setup.py install
 
+And then install zbarlight as mentioned before:
+
+	$ brew install zbar
+	$ export LDFLAGS="-L$(brew --prefix zbar)/lib"
+	$ export CFLAGS="-I$(brew --prefix zbar)/include"
+	$ pip install zbarlight
+
 ## Usage
 
 ### Encryption
