@@ -30,6 +30,7 @@ def command_line_exec():
 	password_arg = sys.argv[2]
 	message = decrypt(filename_arg, password_arg)
 	print(message.decode('utf-8'))
+	return message
 
 
 def main():
