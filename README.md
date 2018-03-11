@@ -47,7 +47,7 @@ If you use the following command, you will see a QR code with name 'hello.PNG' i
 
 #### hello.PNG QR code with embedded encrypted meesage::
 
-![hello.PNG](https://github.com/somdipdey/Encrypted_QR_Code/blob/master/src/Output/hello.PNG =200x200 "hello.PNG QR code with embedded encrypted meesage")
+![hello.PNG](https://github.com/somdipdey/Encrypted_QR_Code/blob/master/src/Output/hello.PNG "hello.PNG QR code with embedded encrypted meesage"){:height="200px" width="200px"}
 
 ### Decryption
 
