@@ -24,7 +24,18 @@ def decrypt(file_name, password):
 		print('No Public key available. Generate Public key and Priavte key first.')
 		return None
 
+def command_line_exec():
+	import sys
+
+	if(len(sys.argv) < 3):
+		print('Please provide QR code filename & password to decrypt the message\n')
+		sys.exit(1)
+	filename_arg = sys.argv[1]
+	password_arg = sys.argv[2]
+	encrypt(filename_arg, password_arg)
+
+
 def main():
 	print(decrypt('my-qr','My secret'))
 
-if __name__=='__main__': main()
+if __name__=='__main__': command_line_exec()

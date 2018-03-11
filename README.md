@@ -31,7 +31,25 @@ The aformentioned steps would install zbarlight. For more information consult th
 	$cd Encrypted_QR_Code
 	$[sudo] python setup.py install
 
-Run the encrypt_qr.py to create your qr code with encrypted message.
-Run the decrypt_qr.py to decrypt the message from the qr code.
+## Usage
+
+To encrypt a meesage and then embed it in the QR code just type the following command in the command prompt:
+
+	$python encrypt_qr.py {message} {qr_file_name} {password}
+
+For example::
+
+	$python encrypt_qr.py 'my hobby is everything' hello 'My Secret'
+
+If you use the following command, you will see a QR code with name 'hello.PNG' is generated in the /Output/ folder. Upon inspection, you can see the QR code holds the encrypted message, i.e. 'my hobby is everything'.
+
+To decrypt the message from the QR code just type the following command in the command prompt:
+
+	$python decrypt_qr.py {message} {qr_file_name} {password}
+
+For example::
+
+	$python decrypt_qr.py 'my hobby is everything' hello 'My Secret'
+
 
 # **Work in progress
