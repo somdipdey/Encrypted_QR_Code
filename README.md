@@ -45,11 +45,11 @@ If you use the following command, you will see a QR code with name 'hello.PNG' i
 
 To decrypt the message from the QR code just type the following command in the command prompt:
 
-	$python decrypt_qr.py {message} {qr_file_name} {password}
+	$python decrypt_qr.py {qr_file_name} {password}
 
 For example::
 
-	$python decrypt_qr.py 'my hobby is everything' hello 'My Secret'
+	$python decrypt_qr.py hello 'My Secret'
 
 
 # **Work in progress
