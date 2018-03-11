@@ -106,6 +106,28 @@ def decrypt(encrypted_message, secret_code):
 	os.remove('encrypted_data.txt')
 	return data.decode('utf8')
 
+def decrypt2(encrypted_message, secret_code):
+	code = secret_code
+	output_directory=os.path.dirname(os.path.abspath(__file__))+'/Keys/'
+
+	with open('encrypted_data.txt', 'wb') as temp_file:
+		for item in (encrypted_message):
+			temp_file.write(item)
+	with open('encrypted_data.txt', 'rb') as fobj:
+		private_key = RSA.import_key(
+		open(output_directory + '/rsa_private_key.pem').read(),
+		passphrase=code)
+		enc_session_key, nonce, tag, ciphertext = [ fobj.read(x) 
+		for x in (private_key.size_in_bytes(), 
+		16, 16, -1) ]
+		cipher_rsa = PKCS1_OAEP.new(private_key)
+		session_key = cipher_rsa.decrypt(enc_session_key)
+		cipher_aes = AES.new(session_key, AES.MODE_EAX, nonce)
+		data = cipher_aes.decrypt_and_verify(ciphertext, tag)
+
+	os.remove('encrypted_data.txt')
+	return data.decode('utf8')
+
 def main():
 	generate_keys('My secret')
 	encrypted = encrypt('blah blah blah blo')

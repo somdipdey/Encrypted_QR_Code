@@ -15,9 +15,11 @@ def decrypt(file_name, password):
 		    image = Image.open(image_file)
 		    image.load()
 		codes = zbarlight.scan_codes('qrcode', image)
-		decoded_result=codes[0]
-		print([decoded_result])
-		return de([decoded_result], password)
+		print(codes)
+		print('\n\n')
+		decoded_result=codes
+		print(decoded_result)
+		return de(decoded_result, password)
 	else:
 		print('No Public key available. Generate Public key and Priavte key first.')
 		return None

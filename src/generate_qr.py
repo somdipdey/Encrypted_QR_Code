@@ -32,7 +32,8 @@ def make_qr_and_save(data, filename, size=2):
 	)
 	qr.add_data(data)
 	qr.make(fit=True)
-	print('::\n')
+	print('\n')
+	print('Embedded data in qr: \n')
 	print(data)
 	img = qr.make_image()
 

@@ -11,6 +11,7 @@ def encrypt(message, filename, password, size=3):
 	if(os.path.exists(public_key_path)):
 		encrypted_message = en(message)
 		print('\n')
+		print('Encrypted message: \n')
 		print(encrypted_message)
 		make_qr_and_save(encrypted_message, filename, size)
 	else:

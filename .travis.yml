@@ -1,0 +1,12 @@
+language: python
+# Operating systems
+os:
+  - osx
+python:
+  - "3.6-dev"  # 3.6 development branch
+# command to install dependencies
+install:
+  - pip install -r requirements.txt
+  - echo "Installation Done"
+script:
+  - echo "No tests yet"
