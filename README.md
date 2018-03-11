@@ -8,11 +8,11 @@ Use this package to encrypt messages and embed in QR code, and decode the messag
 
 ## Dependencies
 
-	$[sudo] pip install qrcode
-	$[sudo] pip install simple-crypt
-	$[sudo] pip install pypng
-	$[sudo] pip install zbar
-	$[sudo] pip install pillow
+	$ [sudo] pip install qrcode
+	$ [sudo] pip install simple-crypt
+	$ [sudo] pip install pypng
+	$ [sudo] pip install zbar
+	$ [sudo] pip install pillow
 
 ### Note:
 
@@ -27,9 +27,9 @@ The aformentioned steps would install zbarlight. For more information consult th
 
 ## Installation
 
-	$git clone https://github.com/somdipdey/Encrypted_QR_Code.git
-	$cd Encrypted_QR_Code
-	$[sudo] python setup.py install
+	$ git clone https://github.com/somdipdey/Encrypted_QR_Code.git
+	$ cd Encrypted_QR_Code
+	$ [sudo] python setup.py install
 
 And then install zbarlight as mentioned before:
 
