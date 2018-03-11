@@ -67,5 +67,5 @@ For example::
 	$python decrypt_qr.py hello 'My Secret'
 
 	Output::
-	
-	'my hobby is everything'
+
+	>>'my hobby is everything'
