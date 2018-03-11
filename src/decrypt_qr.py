@@ -29,6 +29,8 @@ def command_line_exec():
 	filename_arg = sys.argv[1]
 	password_arg = sys.argv[2]
 	message = decrypt(filename_arg, password_arg)
+	print('\n')
+	print('Decrypted message:\n')
 	print(message.decode('utf-8'))
 	return message
 
