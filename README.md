@@ -33,6 +33,8 @@ The aformentioned steps would install zbarlight. For more information consult th
 
 ## Usage
 
+### Encryption
+
 To encrypt a meesage and then embed it in the QR code just type the following command in the command prompt:
 
 	$python encrypt_qr.py {message} {qr_file_name} {password}
@@ -46,6 +48,8 @@ If you use the following command, you will see a QR code with name 'hello.PNG' i
 #### hello.PNG QR code with embedded encrypted meesage::
 
 ![hello.PNG](https://github.com/somdipdey/Encrypted_QR_Code/blob/master/src/Output/hello.PNG "hello.PNG QR code with embedded encrypted meesage")
+
+### Decryption
 
 To decrypt the message from the QR code just type the following command in the command prompt:
 
