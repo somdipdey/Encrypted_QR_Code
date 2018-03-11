@@ -43,6 +43,10 @@ For example::
 
 If you use the following command, you will see a QR code with name 'hello.PNG' is generated in the /Output/ folder. Upon inspection, you can see the QR code holds the encrypted message, i.e. 'my hobby is everything'.
 
+#### hello.PNG QR code with embedded encrypted meesage::
+
+![hello.PNG](https://github.com/somdipdey/Encrypted_QR_Code/blob/master/src/Output/hello.PNG "hello.PNG QR code with embedded encrypted meesage")
+
 To decrypt the message from the QR code just type the following command in the command prompt:
 
 	$python decrypt_qr.py {qr_file_name} {password}
