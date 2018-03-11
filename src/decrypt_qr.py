@@ -7,16 +7,18 @@ import sys
 from binascii import unhexlify
 
 def decrypt(file_name, password):
-
+	# Search the /Output/ folder for the aforementioned QR code
 	output_directory=os.path.dirname(os.path.abspath(__file__))+'/Output/'
 	file_path = output_directory + file_name + '.PNG'
+	# Read contents of the QR code
 	with open(file_path, 'rb') as image_file:
 	    image = Image.open(image_file)
 	    image.load()
 	codes = zbarlight.scan_codes('qrcode', image)
-
+	# Decode the encrypted message from the QR code in byte string (hex) format
 	decoded_result=codes[0].decode('utf-8')
 	ciphertext = unhexlify(decoded_result)
+	# Print the decrypted message and return it as well
 	print('Decoded::')
 	print(ciphertext)
 	return de(password, ciphertext)
@@ -33,9 +35,5 @@ def command_line_exec():
 	print('Decrypted message:\n')
 	print(message.decode('utf-8'))
 	return message
-
-
-def main():
-	print(decrypt('my-qr','My secret'))
 
 if __name__=='__main__': command_line_exec()
