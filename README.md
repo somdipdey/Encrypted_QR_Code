@@ -1,7 +1,7 @@
 ![GitHub issues](https://img.shields.io/github/issues/somdipdey/Encrypted_QR_Code.svg)
 ![Twitter](https://img.shields.io/twitter/url/https/github.com/somdipdey/Encrypted_QR_Code.svg?style=social)
 
-# Encrypted QR Code
+# Encrypted QR Code (qrcrypto)
 
 Use this package to encrypt messages and embed in QR code, and decode the message back.
 
