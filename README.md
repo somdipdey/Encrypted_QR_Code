@@ -1,5 +1,5 @@
-.. image:: https://img.shields.io/github/issues/somdipdey/Encrypted_QR_Code.svg
-.. image::https://img.shields.io/twitter/url/https/github.com/somdipdey/Encrypted_QR_Code.svg?style=social
+[![GitHub issues](https://img.shields.io/github/issues/somdipdey/Encrypted_QR_Code.svg)
+[![Twitter](https://img.shields.io/twitter/url/https/github.com/somdipdey/Encrypted_QR_Code.svg?style=social)
 
 # Encrypted QR Code
 
@@ -57,7 +57,7 @@ If you use the following command, you will see a QR code with name 'hello.PNG' i
 
 #### hello.PNG QR code with embedded encrypted meesage::
 
-<img width="350" alt="hello.PNG QR code with embedded encrypted meesage" src="https://github.com/somdipdey/Encrypted_QR_Code/blob/master/src/Output/hello.PNG">
+<img width="350" alt="hello.PNG QR code with embedded encrypted meesage" src="https://github.com/somdipdey/Encrypted_QR_Code/blob/master/qrcrypto/Output/hello.PNG">
 
 ### Decryption
 
