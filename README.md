@@ -85,7 +85,7 @@ For example::
 	>>'my hobby is everything'
 
 ## Note:
-This package is implemnted using Simple-Crypt encryption python package, which uses PBKDF (Key derivation function) to make guessing of password hard hence secruing from brute-force attacks. The use of PBKDF makes the algorithm slow and hence creating an encrypted QR code is slow and decrypting is slow as well. More about simple-crypt package can be accessed here: https://github.com/andrewcooke/simple-crypt
+This package is implemented using Simple-Crypt encryption python package, which uses PBKDF (Key derivation function) to make guessing of password hard hence secruing from brute-force attacks. The use of PBKDF makes the algorithm slow and hence creating an encrypted QR code is slow and decrypting is slow as well. More about simple-crypt package can be accessed here: https://github.com/andrewcooke/simple-crypt
 
 ## Help Us To Keep Going
 If you really liked our work then do not forget to hit the 'Star' button. Your encouragement towards us will keep us going! 
