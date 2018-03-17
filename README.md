@@ -44,11 +44,11 @@ And then install zbarlight as mentioned before:
 
 To encrypt a meesage and then embed it in the QR code just type the following command in the command prompt:
 
-	$python encrypt_qr.py {message} {qr_file_name} {password}
+	$ python encrypt_qr.py {message} {qr_file_name} {password}
 
 For example::
 
-	$python encrypt_qr.py 'my hobby is everything' hello 'My Secret'
+	$ python encrypt_qr.py 'my hobby is everything' hello 'My Secret'
 
 If you use the following command, you will see a QR code with name 'hello.PNG' is generated in the /Output/ folder. Upon inspection, you can see the QR code holds the encrypted message, i.e. 'my hobby is everything'.
 
@@ -60,12 +60,16 @@ If you use the following command, you will see a QR code with name 'hello.PNG' i
 
 To decrypt the message from the QR code just type the following command in the command prompt:
 
-	$python decrypt_qr.py {qr_file_name} {password}
+	$ python decrypt_qr.py {qr_file_name} {password}
 
 For example::
 
-	$python decrypt_qr.py hello 'My Secret'
+	$ python decrypt_qr.py hello 'My Secret'
 
 	Output::
 
 	>>'my hobby is everything'
+
+## Note:
+This package is implemnted using Simple-Crypt encryption python package, which uses PBKDF (Key derivation function) to make guessing of password hard hence secruing from brute-force attacks. The use of PBKDF makes the algorithm slow and hence creating an encrypted QR code is slow and decrypting is slow as well. More about simple-crypt package can be accessed here: https://github.com/andrewcooke/simple-crypt
+

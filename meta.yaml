@@ -1,0 +1,23 @@
+package:
+  name: qrcrypto
+  version: "1.0.1"
+
+source:
+  git_rev: v1.0.1
+  git_url: https://github.com/somdipdey/Encrypted_QR_Code.git
+
+requirements:
+  build:
+    - python>=3.6
+    - setuptools
+  run:
+    - python
+
+test:
+  imports:
+    - qrcrypto
+
+about:
+  home: https://github.com/somdipdey/Encrypted_QR_Code
+  license: MIT
+  license_file: LICENSE
