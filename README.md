@@ -1,5 +1,5 @@
-[![GitHub issues](https://img.shields.io/github/issues/somdipdey/Encrypted_QR_Code.svg)
-[![Twitter](https://img.shields.io/twitter/url/https/github.com/somdipdey/Encrypted_QR_Code.svg?style=social)
+![GitHub issues](https://img.shields.io/github/issues/somdipdey/Encrypted_QR_Code.svg)
+![Twitter](https://img.shields.io/twitter/url/https/github.com/somdipdey/Encrypted_QR_Code.svg?style=social)
 
 # Encrypted QR Code
 
@@ -76,3 +76,7 @@ For example::
 ## Note:
 This package is implemnted using Simple-Crypt encryption python package, which uses PBKDF (Key derivation function) to make guessing of password hard hence secruing from brute-force attacks. The use of PBKDF makes the algorithm slow and hence creating an encrypted QR code is slow and decrypting is slow as well. More about simple-crypt package can be accessed here: https://github.com/andrewcooke/simple-crypt
 
+## Help Us Spread The Word
+If you really liked our work then do not forget to hit the 'Star' button. Your encouragement towards us will keep us going! 
+
+![GitHub stars](https://img.shields.io/github/stars/somdipdey/Encrypted_QR_Code.svg)
