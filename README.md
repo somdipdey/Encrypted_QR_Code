@@ -30,16 +30,27 @@ The aformentioned steps would install zbarlight. For more information consult th
 
 ## Installation
 
+
+### Step 1:
 	$ git clone https://github.com/somdipdey/Encrypted_QR_Code.git
 	$ cd Encrypted_QR_Code
 	$ [sudo] python setup.py install
 
+### Step 2:
 And then install zbarlight as mentioned before:
 
 	$ brew install zbar
 	$ export LDFLAGS="-L$(brew --prefix zbar)/lib"
 	$ export CFLAGS="-I$(brew --prefix zbar)/include"
 	$ pip install zbarlight
+
+Note:
+
+You can also install the package, mentioned in Step 1, by using pip install as follows:
+
+	$ pip install git+https://github.com/somdipdey/Encrypted_QR_Code.git
+
+And then follow Step 2.
 
 ## Usage
 
